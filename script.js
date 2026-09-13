@@ -9,7 +9,12 @@ const exactPeople = document.getElementById('exactPeople');
 const bobigny = ileDeFranceCommunes.find((commune) => commune.code === '93008');
 
 function normalizeCity(value) {
-	return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+	return value.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, ' ')
+		.trim()
+		.replace(/\s+/g, ' ');
 }
 
 function distanceInKilometers(firstCoordinates, secondCoordinates) {
