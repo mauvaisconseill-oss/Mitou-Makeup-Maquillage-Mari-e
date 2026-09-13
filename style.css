@@ -17,3 +17,9 @@
 .travel-form #exactPeople{-moz-appearance:textfield}
 .travel-form #exactPeople::-webkit-inner-spin-button,.travel-form #exactPeople::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
 .travel-details[hidden]{display:none}
+.hero{align-items:center;background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.2)),url('mariée.jpg') center 28%/cover;display:flex;min-height:680px;padding:100px 13vw}
+.hero-copy{max-width:540px}
+.hero-intro{color:var(--ink);font-size:18px;line-height:1.7}
+.details-grid{grid-template-columns:repeat(2,1fr)}
+.detail-card{min-height:250px}
+@media(max-width:700px){.hero{display:block;min-height:560px;padding:75px 9vw 95px}.hero-intro{font-size:16px}}

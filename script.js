@@ -33,7 +33,7 @@ travelForm.addEventListener('submit', (event) => {
 	event.preventDefault();
 	const city = cityInput.value.trim();
 	const postcode = city.match(/\b(75|77|78|91|92|93|94|95)\d{3}\b/)?.[0] || '';
-	const nearbyCities = /paris|vincennes|montreuil|saint[- ]?mandé|charenton|bagnolet|fontenay|créteil|ivry|villes?juif|boulogne|clichy|neuilly/i.test(city);
+	const nearbyCities = /bobigny|paris|vincennes|montreuil|saint[- ]?mandé|charenton|bagnolet|fontenay|créteil|ivry|villes?juif|boulogne|clichy|neuilly/i.test(city);
 	const nearby = postcode.startsWith('75') || postcode.startsWith('92') || postcode.startsWith('93') || postcode.startsWith('94') || nearbyCities;
 
 	if (studioOption.checked) {
