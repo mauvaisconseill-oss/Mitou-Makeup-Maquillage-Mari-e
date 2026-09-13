@@ -44,6 +44,7 @@ travelForm.addEventListener('submit', (event) => {
 
 	travelResults.hidden = false;
 	travelResults.classList.toggle('is-nearby', nearby);
+	travelResults.classList.toggle('is-far', !nearby);
 	estimateMessage.textContent = nearby
 		? `Estimation pour ${city} : supplément de déplacement de +60€.`
 		: `Estimation pour ${city} : supplément de déplacement de +80€.`;

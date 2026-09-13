@@ -23,3 +23,4 @@
 .details-grid{grid-template-columns:repeat(2,1fr)}
 .detail-card{min-height:250px}
 @media(max-width:700px){.hero{display:block;min-height:560px;padding:75px 9vw 95px}.hero-intro{font-size:16px}}
+.travel-results:not(.is-nearby):not(.is-far) .travel-result{border-color:var(--line);color:var(--soft-ink);opacity:1}
